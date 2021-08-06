@@ -14,7 +14,7 @@ A Simple Giveaway Bot Made In python (discord.py), Not very Advanced, Can be Bet
 
 ## 📑 Example
 - See The Images.
-<img src="https://images-ext-1.discordapp.net/external/0xEVV1DT3-xhf-ARyBepfiMsNtAfNxhv0KLrk_BWZKA/http/shadow.with-your.mom/r/krzvdyutz9a.png?width=328&height=391" width="250" height="500" />
+<img src="https://images-ext-1.discordapp.net/external/0xEVV1DT3-xhf-ARyBepfiMsNtAfNxhv0KLrk_BWZKA/http/shadow.with-your.mom/r/krzvdyutz9a.png?width=328&height=391" width="300" height="500" />
 
 
 ## Things To Do
