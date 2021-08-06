@@ -105,27 +105,6 @@ async def giveaway(ctx):
 
 
 
-@client.command()
-@commands.has_permissions(manage_channels=True)
-async def reroll(ctx, channel: discord.TextChannel, id_ : int):
-    # Reroll command requires the user to have a "Giveaway Host" role to function properly
-    try:
-        new_message = await channel.fetch_message(id_)
-    except:
-        await ctx.send("Incorrect id.")
-        return
-    
-    # Picks a new winner
-    users = await new_message.reactions[0].users().flatten()
-    users.pop(users.index(client.user))
-    winner = random.choice(users)
-
-    # Announces the new winner to the server
-    reroll_announcement = discord.Embed(color = 0xff2424)
-    reroll_announcement.set_author(name = f'The giveaway was re-rolled by the host!', icon_url = 'https://i.imgur.com/DDric14.png')
-    reroll_announcement.add_field(name = f'🥳 New Winner:', value = f'{winner.mention}', inline = False)
-    await channel.send(embed = reroll_announcement)
-
 @client.event
 async def on_command_error(ctx, error):
   await ctx.send(f'{error}')
